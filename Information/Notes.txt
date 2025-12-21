@@ -7,3 +7,10 @@ Without OS:
           No files
           No keyboard / mouse handling
           No multitasking
+]Why Do We Need an OS?
+
+Hardware alone cannot:
+        Run multiple programs
+        Manage memory
+        Decide which program runs next
+        Protect programs from each other
