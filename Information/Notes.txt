@@ -1,0 +1,9 @@
+What is an Operating System (OS)?
+    Simple definition (exam-ready):
+        An Operating System is a program that acts as an interface between the user and the hardware.
+
+Without OS:
+          No programs
+          No files
+          No keyboard / mouse handling
+          No multitasking
