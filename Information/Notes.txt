@@ -40,3 +40,6 @@ Examples:
         Memory manager
         File system
         Device drivers
+
+Q  How User Talks to OS → System Calls ?
+   User programs cannot directly access hardware.
