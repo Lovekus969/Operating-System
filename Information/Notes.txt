@@ -14,3 +14,29 @@ Hardware alone cannot:
         Manage memory
         Decide which program runs next
         Protect programs from each other
+
+Two Worlds: User Space & Kernel Space
+    This is THE MOST IMPORTANT OS CONCEPT.
+🔵 User Space
+
+        Where your programs run
+        Limited access
+        Cannot directly touch hardware
+
+Examples:
+        
+        Your C program
+        Browser
+        Text editor
+
+🔴 Kernel Space
+        Where OS runs
+        Full access to hardware
+        Manages CPU, memory, devices
+
+Examples:
+        
+        Process manager
+        Memory manager
+        File system
+        Device drivers
