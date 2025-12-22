@@ -43,3 +43,21 @@ Examples:
 
 Q  How User Talks to OS → System Calls ?
    User programs cannot directly access hardware.
+
+New Coverage: Hadoop Clusters
+
+What is a Cluster?
+        Many computers connected via network
+        Work together as one system
+Hadoop Cluster
+
+Used for:
+        Big data processing
+        Distributed storage
+        Fault tolerance
+
+📌 OS role in clusters:
+
+        Process coordination
+        Resource management
+        Distributed file systems
