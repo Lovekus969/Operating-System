@@ -5,3 +5,10 @@ devices. The presentation is motivational and explanatory in nature. We
 have avoided a discussion of how things are done internally in these chapters. Therefore, they are suitable for individual readers or for students in
 lower-level classes who want to learn what an operating system is without
 getting into the details of the internal algorithms.
+
+
+READ:
+File/Device ──▶ Kernel ──▶ User Buffer
+
+WRITE:
+User Buffer ──▶ Kernel ──▶ File/Device
