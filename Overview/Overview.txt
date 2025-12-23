@@ -1,0 +1,7 @@
+ Overview. Chapters 1 and 2 explain what operating systems are, what
+they do, and how they are designed and constructed. These chapters discuss what the common features of an operating system are and what an
+operating system does for the user. We include coverage of both traditional PC and server operating systems and operating systems for mobile
+devices. The presentation is motivational and explanatory in nature. We
+have avoided a discussion of how things are done internally in these chapters. Therefore, they are suitable for individual readers or for students in
+lower-level classes who want to learn what an operating system is without
+getting into the details of the internal algorithms.
