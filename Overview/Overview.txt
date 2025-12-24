@@ -32,3 +32,57 @@ utilization of the CPU and the speed of its response to its users, the computer 
 memory-management schemes, reflecting various approaches to memory
 management, and the effectiveness of a particular algorithm depends on
 the situation.
+• Storage management. Chapters 11 and 12 describe how mass storage and
+I/O are handled in a modern computer system. The I/O devices that attach
+to a computer vary widely, and the operating system needs to provide a
+wide range of functionality to applications to allow them to control all
+aspects of these devices. We discuss system I/O in depth, including I/O
+system design, interfaces, and internal system structures and functions.
+In many ways, I/O devices are the slowest major components of the computer. Because they represent a performance bottleneck, we also examine
+performance issues associated with I/O devices.
+
+• File systems. Chapters 13 through 15 discuss how file systems are handled
+in a modern computer system. File systems provide the mechanism for online storage of and access to both data and programs. We describe the classic internal algorithms and structures of storage management and provide
+a firm practical understanding of the algorithms used— their properties,
+advantages, and disadvantages.
+
+• Security and protection. Chapters 16 and 17 discuss the mechanisms necessary for the security and protection of computer systems. The processes
+in an operating system must be protected from one another’s activities.
+To provide such protection, we must ensure that only processes that have
+gained proper authorization from the operating system can operate on
+the files, memory, CPU, and other resources of the system. Protection is
+a mechanism for controlling the access of programs, processes, or users
+to computer-system resources. This mechanism must provide a means
+of specifying the controls to be imposed, as well as a means of enforcement. Security protects the integrity of the information stored in the system
+(both data and code), as well as the physical resources of the system, from
+unauthorized access, malicious destruction or alteration, and accidental
+introduction of inconsistency.
+• Advanced topics. Chapters 18 and 19 discuss virtual machines and
+networks/distributed systems. Chapter 18 provides an overview of
+virtual machines and their relationship to contemporary operating
+systems. Included is a general description of the hardware and software
+techniques that make virtualization possible. Chapter 19 provides an
+overview of computer networks and distributed systems, with a focus on
+the Internet and TCP/IP.
+• Case studies. Chapter 20 and 21 present detailed case studies of two real
+operating systems—Linux and Windows 10.
+• Appendices. Appendix A discusses several old influential operating systems that are no longer in use. Appendices B through D cover in great
+detaisl three older operating systems— Windows 7, BSD, and Mach.
+• POSIX. POSIX (which stands for Portable Operating System Interface) represents a set of standards implemented primarily for UNIX-based operating systems. Although Windows systems can also run certain POSIX programs, our coverage of POSIX focuses on Linux and UNIX systems. POSIXcompliant systems must implement the POSIX core standard (POSIX.1);
+Linux and macOS are examples of POSIX-compliant systems. POSIX also
+defines several extensions to the standards, including real-time extensions
+(POSIX.1b) and an extension for a threads library (POSIX.1c, better known
+as Pthreads). We provide several programming examples written in C
+illustrating the POSIX base API, as well as Pthreads and the extensions for
+real-time programming. These example programs were tested on Linux 4.4
+and macOS 10.11 systems using the gcc compiler.
+• Java. Java is a widely used programming language with a rich API and
+built-in language support for concurrent and parallel programming. Java
+programs run on any operating system supporting a Java virtual machine
+(or JVM). We illustrate various operating-system and networking concepts
+with Java programs tested using Version 1.8 of the Java Development Kit
+(JDK).
+• Windows systems. The primary programming environment for Windows
+systems is the Windows API, which provides a comprehensive set of functions for managing processes, threads, memory, and peripheral devices.
+We supply a modest number of C programs illustrating the use of this API.
+Programs were tested on a system running Windows 10.
