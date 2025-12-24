@@ -12,3 +12,11 @@ File/Device ──▶ Kernel ──▶ User Buffer
 
 WRITE:
 User Buffer ──▶ Kernel ──▶ File/Device
+
+Process management. Chapters 3 through 5 describe the process concept
+and concurrency as the heart of modern operating systems. A process is
+the unit of work in a system. Such a system consists of a collection of
+concurrently executing processes, some executing operating-system code
+and others executing user code. These chapters cover methods for process
+scheduling and interprocess communication. Also included is a detailed
+discussion of threads, as well as an examination of issues related to multicore systems and parallel programming.
