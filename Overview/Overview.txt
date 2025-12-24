@@ -20,3 +20,15 @@ concurrently executing processes, some executing operating-system code
 and others executing user code. These chapters cover methods for process
 scheduling and interprocess communication. Also included is a detailed
 discussion of threads, as well as an examination of issues related to multicore systems and parallel programming.
+
+ Process synchronization. Chapters 6 through 8 cover methods for process
+synchronization and deadlock handling. Because we have increased the
+coverage of process synchronization, we have divided the former Chapter
+5 (Process Synchronization) into two separate chapters: Chapter 6, Synchronization Tools, and Chapter 7, Synchronization Examples.
+
+• Memory management. Chapters 9 and 10 deal with the management of
+main memory during the execution of a process. To improve both the
+utilization of the CPU and the speed of its response to its users, the computer must keep several processes in memory. There are many different
+memory-management schemes, reflecting various approaches to memory
+management, and the effectiveness of a particular algorithm depends on
+the situation.
