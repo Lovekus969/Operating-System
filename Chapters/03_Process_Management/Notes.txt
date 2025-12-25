@@ -1,0 +1,5 @@
+Chapter 3: Processes simplifies the discussion of scheduling so that it
+now includes only CPU scheduling issues. New coverage describes the
+memory layout of a C program, the Android process hierarchy, Mach
+message passing, and Android RPCs. We have also replaced coverage of
+the traditional UNIX/Linux init process with coverage of systemd.
