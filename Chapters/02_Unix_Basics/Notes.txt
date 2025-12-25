@@ -1,0 +1,8 @@
+Chapter 2: Operating-System Structures provides a significantly revised
+discussion of the design and implementation of operating systems. We
+have updated our treatment of Android and iOS and have revised 
+coverage of the system boot process with a focus on GRUB for Linux
+systems. New coverage of the Windows subsystem for Linux is included
+as well. We have added new sections on linkers and loaders, and we now
+discuss why applications are often operating-system specific. Finally, we
+have added a discussion of the BCC debugging toolset.
