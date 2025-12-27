@@ -3,3 +3,13 @@ Chapter 1: Introduction includes updated coverage of multicore systems,
 as well as new coverage of NUMA systems and Hadoop clusters. Old
 material has been updated, and new motivation has been added for the
 study of operating systems.
+
+What is a Multiprocessor System?
+
+A multiprocessor system is a computer that has more than one CPU.
+  Examples:
+      Smartphones (multiple cores)
+      Laptops / desktops (quad-core, octa-core CPUs)
+      Servers (many CPUs)
+  
+  Earlier computers had one CPU → now multiple CPUs or cores are the norm.
