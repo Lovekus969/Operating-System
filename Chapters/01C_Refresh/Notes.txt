@@ -13,3 +13,12 @@ A multiprocessor system is a computer that has more than one CPU.
       Servers (many CPUs)
   
   Earlier computers had one CPU → now multiple CPUs or cores are the norm.
+
+Why use multiple processors? (Main Advantage)
+    Throughput = amount of work done per unit time
+    More CPUs → more tasks can run at the same time
+
+Example:
+    1 CPU → 1 task at a time
+    4 CPUs → up to 4 tasks at the same time
+        So overall work finishes faster
