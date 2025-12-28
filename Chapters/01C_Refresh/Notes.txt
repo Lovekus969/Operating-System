@@ -22,3 +22,5 @@ Example:
     1 CPU → 1 task at a time
     4 CPUs → up to 4 tasks at the same time
         So overall work finishes faster
+
+Multiprogramming and Multitasking
