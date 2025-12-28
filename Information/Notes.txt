@@ -1,4 +1,4 @@
-What is an Operating System (OS)?
+ What is an Operating System (OS)?
     Simple definition (exam-ready):
         An Operating System is a program that acts as an interface between the user and the hardware.
 
@@ -55,6 +55,19 @@ Used for:
         Big data processing
         Distributed storage
         Fault tolerance
+Why Do We Need Dual-Mode Operation?
+The operating system (OS) and user programs both use:
+        CPU
+        Memory
+        I/O device
+        Files
+
+⚠️ Problem:
+
+A buggy or malicious user program could:
+        Access memory it shouldn’t
+        Crash the OS
+        Take control of hardware
 
 📌 OS role in clusters:
 
