@@ -1,1 +1,24 @@
 Multimode Operation in Modern CPUs (Article Study)
+
+Why Go Beyond Dual-Mode?
+Earlier we saw:
+    User mode → limited privileges
+    Kernel mode → full control
+
+Modern systems are more complex:
+                              Device drivers
+                              Virtual machines
+                              Hypervisors
+                              Secure firmware
+
+👉 Two modes are sometimes not enough.
+So CPUs provide multiple execution modes with different privilege levels.
+
+2️⃣ Intel x86 Protection Rings
+    Intel processors implement 4 protection rings 
+| Ring   | Privilege Level | Typical Use        |
+| ------ | --------------- | ------------------ |
+| Ring 0 | Highest         | Kernel (OS core)   |
+| Ring 1 | High            | OS services (rare) |
+| Ring 2 | Medium          | OS services (rare) |
+| Ring 3 | Lowest          | User applications  |
