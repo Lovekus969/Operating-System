@@ -22,3 +22,15 @@ So CPUs provide multiple execution modes with different privilege levels.
 | Ring 1 | High            | OS services (rare) |
 | Ring 2 | Medium          | OS services (rare) |
 | Ring 3 | Lowest          | User applications  |
+
+In practice:
+
+Ring 0 → Operating System kernel
+Ring 3 → User programs
+Rings 1 & 2 → Mostly unused
+
+📌 Why unused?
+
+            Simpler OS design
+            Performance reasons
+            Modern OSs prefer kernel/user split
