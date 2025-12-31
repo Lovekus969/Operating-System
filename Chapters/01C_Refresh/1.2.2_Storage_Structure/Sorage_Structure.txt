@@ -35,3 +35,84 @@
           ⚠️ Volatile
           
           Power off → data lost
+
+Storage Hierarchy (Big Picture)
+    From fastest & smallest → slowest & largest:
+
+          CPU Registers
+          ↓
+          CPU Cache (L1, L2, L3)
+          ↓
+          Main Memory (RAM / DRAM)
+          ↓
+          Secondary Storage (SSD / HDD)
+          ↓
+          Tertiary Storage (Cloud / Tape)
+
+4️⃣ Storage INSIDE the CPU (Very Important)
+        🔹 1. Registers (Fastest Storage)
+        
+        Located inside CPU
+                  Very small
+                  Extremely fast
+        
+        Types:
+            Program Counter (PC)
+            Instruction Register (IR)
+            General-purpose registers
+            Stack pointer
+            Status register
+        
+        📌 Used for:
+        
+            Current instruction
+            Intermediate calculations
+            Control flow
+        🔹 2. CPU Cache
+            Between CPU and RAM to reduce access time.
+            Cache Level	Location	Speed
+            L1	Inside core	Fastest
+            L2	Per core	Fast
+            L3	Shared	Slower
+        
+        Cache stores:
+            Frequently used instructions
+            Frequently used data
+        📌 OS impact:
+        
+        Cache coherence in multiprocessor systems
+        Performance optimization
+
+5️⃣ Why Not Run OS from RAM Only?
+          Because RAM is volatile.
+    
+            ❌ Power off → OS gone
+            ❌ Bootstrap code lost
+    So we need nonvolatile storage.
+
+6️⃣ Firmware Storage (EEPROM & ROM)
+
+              🔹 What is Firmware?
+                      Small programs stored in nonvolatile memory Used to start the system
+          Stored in:
+                    EEPROM
+                    Flash memory
+                    ROM (older systems)
+        
+        🔹 EEPROM (Electrically Erasable Programmable ROM)
+        
+        Characteristics:
+                    Nonvolatile
+                    Writable (but rarely written)
+                    Retains data without power
+        
+        Used to store:
+                  Bootstrap loader
+                  Hardware initialization code
+                  BIOS / UEFI
+        
+        📌 Why EEPROM?
+                  Reliable
+                  Not erased on shutdown
+                  Perfect for startup code
+                            
