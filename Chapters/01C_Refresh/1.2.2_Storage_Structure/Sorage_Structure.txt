@@ -1,0 +1,37 @@
+1.2.2 Storage Structure — Deep System-Level Explanation
+  We’ll cover this in layers, from CPU → Memory → Firmware → Storage, and how the OS fits in.
+    1️⃣ Fundamental Rule: Where Can the CPU Run Code From?
+    
+    👉 CPU can execute instructions ONLY from main memory (RAM).
+          CPU cannot run programs directly from:
+                                                    Hard disk
+                                                    SSD
+                                                    USB
+                                                    EEPROM
+          📌 Therefore:
+          
+          Any program (OS, app, driver) must be loaded into RAM before execution.
+      
+    2️⃣ Main Memory (RAM)
+          🔹 What is Main Memory?
+          Also called RAM (Random Access Memory)
+          
+                                                  Rewritable
+                                                  Fast
+          Directly accessible by the CPU
+          🔹 Technology Used
+                      DRAM (Dynamic Random Access Memory)
+                      Needs periodic refreshing
+                      Slower than cache, faster than disk
+          
+          🔹 Role in OS
+          
+          Holds:
+                      Running programs
+                      OS kernel
+                      Process stacks and heaps
+                      Page tables
+          
+          ⚠️ Volatile
+          
+          Power off → data lost
