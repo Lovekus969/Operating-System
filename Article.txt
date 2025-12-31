@@ -1,4 +1,4 @@
-Multimode Operation in Modern CPUs (Article Study)
+ Multimode Operation in Modern CPUs (Article Study)
 
 Why Go Beyond Dual-Mode?
 Earlier we saw:
