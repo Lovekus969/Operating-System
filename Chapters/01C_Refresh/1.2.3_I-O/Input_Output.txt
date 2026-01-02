@@ -34,3 +34,4 @@ because of the varying nature of the devices
               Network
               USB
               GPU
+Interrupt-driven I/O is efficient for small data transfers but causes excessive overhead for bulk data movement. DMA solves this by allowing device controllers to transfer entire blocks of data directly between devices and main memory with minimal CPU involvement, generating only one interrupt per block upon completion.
