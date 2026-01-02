@@ -1,0 +1,5 @@
+1.4 Operating-System Operations
+Now that we have discussed basic information about computer-system organization and architecture, we are ready to talk about operating systems. An operating system provides the environment within which programs are executed.
+Internally, operating systems vary greatly, since they are organized along many
+different lines. There are, however, many commonalities, which we consider in
+this section.
