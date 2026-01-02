@@ -3,3 +3,22 @@ Now that we have discussed basic information about computer-system organization 
 Internally, operating systems vary greatly, since they are organized along many
 different lines. There are, however, many commonalities, which we consider in
 this section.
+
+Hadoop (Big Data in Clustered Systems)
+  🔹 What is Hadoop?
+    “Hadoop is an open-source software framework”
+          Open-source → free, community-driven
+          Framework → provides tools + architecture, not just one program
+
+    🔹 Purpose of Hadoop
+            “used for distributed processing of large data sets (big data)”
+                Big data means:
+                        Very large volume
+                        Too big for a single machine
+                        Needs parallel processing
+                
+                Examples:
+                        Logs
+                        User activity data
+                        Sensor data
+                        Social media data
