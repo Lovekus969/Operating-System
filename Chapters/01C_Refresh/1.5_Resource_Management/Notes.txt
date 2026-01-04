@@ -1,0 +1,22 @@
+1.5 Resource Management (Big Picture)
+
+“An operating system is a resource manager.”
+This is one of the most important one-line definitions of an OS.
+  What is a Resource?
+      A resource is anything limited that programs need to run.
+    Main OS resources:
+                  CPU time
+                  Main memory (RAM)
+                  File-storage space (disk/SSD)
+                  I/O devices (keyboard, mouse, printer, network, etc.)
+
+
+1.5.1 Process Management
+A program can do nothing unless its instructions are executed by a CPU. A
+program in execution, as mentioned, is a process. A program such as a compiler
+is a process, and a word-processing program being run by an individual user
+on a PC is a process. Similarly, a social media app on a mobile device is a
+process. For now, you can consider a process to be an instance of a program in
+execution, but later you will see that the concept is more general. As described
+in Chapter 3, it is possible to provide system calls that allow processes to create
+subprocesses to execute concurrently
