@@ -20,3 +20,13 @@ process. For now, you can consider a process to be an instance of a program in
 execution, but later you will see that the concept is more general. As described
 in Chapter 3, it is possible to provide system calls that allow processes to create
 subprocesses to execute concurrently
+
+What is fork() (OS View)
+ANS:    Definition (exam-perfect):
+        fork() is a system call that creates a new process by duplicating the calling process.
+              Parent process → calls fork()
+              Child process → newly created process
+      Both:
+        Run concurrently
+        Have different PIDs
+        Start execution from the same point
