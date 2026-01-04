@@ -1,0 +1,209 @@
+                                                                      Process Control in UNIX (fork, exec, wait)
+First: What is a Process?
+    A process is a running instance of a program with:
+
+Its own PID (Process ID)
+      Own memory (code, stack, heap, data)
+      Own registers and program counter
+      UNIX manages processes using system calls.
+
+What does “creation in the kernel” mean?
+     Creation in the kernel means the operating system kernel is responsible for creating and managing system objects, such as:
+
+    Processes
+    Threads
+    Memory spaces
+    File descriptors
+
+
+fork() – Create a New Process
+
+🔹 What is fork()?
+
+fork() creates a new process (child) by duplicating the calling process (parent).
+
+🔹 Where does it work?
+
+    Kernel space creates the process
+    User program calls fork()
+
+OS allocates:
+
+          New PID
+          New memory space (copy-on-write)
+
+A program is an executable file in ELF (Executable and Linkable Format) format.
+A process is an instance of a program in execution state. It has unique process identifier (PID).
+A process has various user and group IDs – real, effective and saved.
+pid_t getpid(void) – Returns: process ID of calling process
+pid_t getppid(void) – Returns: parent process ID of calling process
+uid_t getuid(void) – Returns: real user ID of calling process
+uid_t geteuid(void) – Returns: effective user ID of calling process
+gid_t getgid(void) – Returns: real group ID of calling process
+gid_t getegid(void) – Returns: effective group ID of calling process
+Process control includes creation of new processes, program execution & process termination.
+
+A program is:
+  
+  A file stored on disk
+  Usually in ELF format on Linux
+  Contains machine instructions + metadata
+  Not running yet
+  
+  👉 Example: a.out, ls, cat, or any compiled C program.
+Process
+    A process is:
+        
+        A program that is loaded into memory
+        Currently running or waiting
+        Has a unique PID
+
+Process ID (PID)
+
+Every running process gets a unique number from the OS.
+    Function:
+        pid_t getpid(void);
+        
+        Returns PID of the calling process.
+        Has its own memory, stack, file descriptors, registers, etc.
+
+Parent Process ID (PPID)
+    
+    Every process has a parent.
+    
+    Function:
+        pid_t getppid(void);
+        
+        Returns PID of your parent process.
+    Example:
+      
+      Terminal runs your program → terminal is parent
+      Your program's PPID = terminal’s PID
+
+USER IDs and GROUP IDs
+          Processes run under a user and a group, which determine permissions.
+There are 3 types each:
+
+✔ Real ID (UID/GID)
+     The actual user who started the process.
+✔ Effective ID (EUID/EGID)
+    The user/group actually used for permission checking.
+    Often different when running sudo or setuid programs.
+Why do effective IDs exist?
+
+Example:
+passwd program allows updating /etc/shadow, which requires root permissions.
+
+Real UID = your ID
+    
+    Effective UID = root
+    
+    Saved IDs
+    
+    They store your previous effective UID/GID so that a program can temporarily drop and regain privileges.
+    
+    Examples in system utilities.
+
+Process Control
+    
+    Process control involves:
+    
+    ✔ Creating new processes
+    
+    (using fork())
+    
+    ✔ Executing programs
+    
+    (using exec() family: execl, execvp, etc.)
+    
+    ✔ Terminating processes
+    
+    (using exit(), return, or signals)
+    
+    This is the foundation of UNIX process management.
+
+
+What is Inter-Process Communication (IPC)?
+    Inter-Process Communication (IPC) is the mechanism that allows two or more processes to communicate with each other or share data.
+
+In simple words:
+
+     Processes cannot normally talk to each other directly.
+     IPC gives them a way to send messages, data, or signals
+Definition of Shared Memory
+  Shared Memory is an IPC (Inter-Process Communication) mechanism where two or more processes share the same physical memory region.
+  `  They can read and write to this memory directly, making it the fastest IPC technique.
+
+Why IPC is needed:
+
+    To share data between programs
+    To coordinate work between processes
+    To improve performance in multitasking systems
+
+Common IPC mechanisms:
+
+    Pipes
+    Message Queues
+    Shared Memory
+    Semaphores
+    Signals
+    Sockets
+
+  What is Process Creation?
+    Process creation is the act of creating a new process (running program) in an operating system.
+      👉 A process = program in execution (not just a file).
+      So, process creation means starting a new running program.
+
+Is Process Creation a function?
+
+ Yes, in Unix it is done using system calls (functions) provided by the OS.
+
+Main system calls:
+      fork() → creates a new process
+      exec() → loads a new program into a process
+      These are OS-level functions, not normal user functions.
+
+Where does Process Creation happen?
+
+Process creation happens:
+          Inside the Operating System (Kernel)
+          Triggered by a user program using system calls
+
+Why do we need Process Creation?
+        We need process creation because:
+
+1. Run multiple programs 
+    OS must run many programs at the same time
+
+2. Program isolation (safety)
+      Each process has separate memory
+      One crash does NOT crash others
+
+3. Parallel & multitasking
+      Parent and child can run simultaneously
+
+
+4. Resource management
+      OS tracks CPU, memory, files per process
+
+5. System services
+      Servers, daemons, background jobs
+
+
+Summary
+
+kill(pid, SIGKILL) → sends signal to kernel
+Kernel delivers signal to child process
+Child is terminated immediately
+Signal does not appear in output unless a handler is set (not possible for SIGKILL)
+kill() is the function you call in your code; the kernel handles the rest
+How kill(pid, SIGKILL) Works Internally
+0️⃣ Big Picture (One Line)
+
+kill() is a system call that asks the kernel to deliver a signal to a process.
+User Space vs Kernel Space
+
+Your program runs in user space
+The OS (Linux kernel) runs in kernel space
+
+kill(pid, SIGKILL);
