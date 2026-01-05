@@ -30,3 +30,4 @@ ANS:    Definition (exam-perfect):
         Run concurrently
         Have different PIDs
         Start execution from the same point
+Cache Management ( Smalles unit ) as it has low size so maintaing it is an another next level importance 
