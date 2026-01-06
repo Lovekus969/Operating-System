@@ -31,3 +31,19 @@ ANS:    Definition (exam-perfect):
         Have different PIDs
         Start execution from the same point
 Cache Management ( Smalles unit ) as it has low size so maintaing it is an another next level importance 
+1.10.5 Cloud Computing
+
+Cloud computing is a type of computing that delivers computing, storage,
+and even applications as a service across a network. In some ways, it’s a
+logical extension of virtualization, because it uses virtualization as a base for
+its functionality. For example, the Amazon Elastic Compute Cloud (ec2) facility
+has thousands of servers, millions of virtual machines, and petabytes of storage
+available for use by anyone on the Internet. Users pay per month based on
+how much of those resources they use. There are actually many types of cloud
+computing, including the following:
+      • Public cloud—a cloud available via the Internet to anyone willing to pay for the services
+      • Private cloud—a cloud run by a company for that company’s own use
+      • Hybrid cloud—a cloud that includes both public and private cloud components
+      • Software as a service (SaaS)—one or more applications (such as word processors or spreadsheets) available via the Internet
+      • Platform as a service (PaaS)—a software stack ready for application use via the Internet (for example, a database server)
+      • Infrastructure as a service (IaaS)—servers or storage available over the Internet (for example, storage available for making backup copies of production data)
