@@ -1,0 +1,17 @@
+This chapter presents an in-depth examination of the Linux operating system.
+By examining a complete, real system, we can see how the concepts we have
+discussed relate both to one another and to practice.
+Linux is a variant of UNIX that has gained popularity over the last several
+decades, powering devices as small as mobile phones and as large as roomfilling supercomputers. In this chapter, we look at the history and development
+of Linux and cover the user and programmer interfaces that Linux presents—
+interfaces that owe a great deal to the UNIX tradition. We also discuss the design
+and implementation of these interfaces. Linux is a rapidly evolving operating
+system. This chapter describes developments through the Linux 4.12 kernel,
+which was released in 2017.
+CHAPTER OBJECTIVES
+• Explore the history of the UNIX operating system from which Linux is
+derived and the principles upon which Linux’s design is based.
+• Examine the Linux process and thread models and illustrate how Linux
+schedules threads and provides interprocess communication.
+• Look at memory management in Linux.
+• Explore how Linux implements file systems and manages I/O devices
