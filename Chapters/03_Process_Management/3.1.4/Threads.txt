@@ -4,3 +4,20 @@ performs a single thread of execution. For example, when a process is running
 a word-processor program, a single thread of instructions is being executed.
 This single thread of control allows the process to perform only one task at a
 time. 
+
+Q1. What is a thread? How is it different from a process?
+ Answer: A thread is the smallest unit of execution within a process.
+                      Process vs Thread
+| Process                     | Thread                    |
+| --------------------------- | ------------------------- |
+| Heavyweight                 | Lightweight               |
+| Own memory space            | Shares process memory     |
+| One or more threads         | Single execution unit     |
+| Context switch is expensive | Context switch is cheaper |
+
+Q2. Why did early process models support only a single thread?
+Answer:  Early operating systems:
+          Had single-core CPUs
+          Executed one task at a time
+          Did not require concurrency within a program
+          Thus, a process was assumed to perform only one sequence of instructions.
