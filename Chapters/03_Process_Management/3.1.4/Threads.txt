@@ -21,3 +21,22 @@ Answer:  Early operating systems:
           Executed one task at a time
           Did not require concurrency within a program
           Thus, a process was assumed to perform only one sequence of instructions.
+Q3. What limitation exists in a single-threaded process?
+Answer:
+        A single-threaded process can:
+           Perform only one task at a time
+        Example:  In a single-threaded word processor:
+            User cannot type
+            While spell check is running
+Q4. How do threads improve program responsiveness?
+Answer:
+  Threads allow:
+  
+      Multiple tasks to run concurrently
+      One thread to handle user input
+      Another thread to perform background computation
+  
+  Example:
+    Typing text while spell checker runs
+  
+  📌 This improves user experience and performance.
