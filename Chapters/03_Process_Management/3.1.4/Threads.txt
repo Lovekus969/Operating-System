@@ -50,3 +50,21 @@ Answer:
              Faster execution
             Better CPU utilization
             True parallelism (not just time-sharing)
+
+Q6. Explain multithreading using a word processor example.
+Answer: A multithreaded word processor may use:
+          Thread 1 → User input handling
+          Thread 2 → Spell checking
+          Thread 3 → Auto-saving
+          These threads run concurrently, allowing the program to perform multiple tasks simultaneously.
+Q7. How does multithreading affect the Process Control Block (PCB)?
+Answer:
+       In a multithreaded system:
+              The PCB is expanded
+       It stores:
+              Process-level information
+              Thread-level information for each thread
+        Each thread has:  
+              Program counter
+              Register set
+              Stack
