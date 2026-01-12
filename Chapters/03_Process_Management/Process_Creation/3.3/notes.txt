@@ -1,0 +1,10 @@
+3.3.1 Process Creation
+During the course of execution, a process may create several new processes. As
+mentioned earlier, the creating process is called a parent process, and the new
+processes are called the children of that process. Each of these new processes
+may in turn create other processes, forming a tree of processes.
+Most operating systems (including UNIX, Linux, and Windows) identify
+processes according to a unique process identifie (or pid), which is typically
+an integer number. The pid provides a unique value for each process in the
+system, and it can be used as an index to access various attributes of a process
+within the kernel
