@@ -97,3 +97,10 @@ Q11. Can threads exist without processes?
 Answer:
       No.
       A thread must belong to a process.
+
+     ------------------------------------------------------Degree of Multiprogramming-------------------------------------------------------------------------------
+Definition: The degree of multiprogramming is the number of processes currently loaded in main memory.
+         Why Multiprogramming Is Needed
+             A single process may wait for I/O
+             CPU would remain idle during this wait
+             Multiprogramming keeps CPU busy by switching to another process
