@@ -1,0 +1,6 @@
+Threads
+The process model discussed so far has implied that a process is a program that
+performs a single thread of execution. For example, when a process is running
+a word-processor program, a single thread of instructions is being executed.
+This single thread of control allows the process to perform only one task at a
+time. 
