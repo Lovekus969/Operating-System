@@ -68,3 +68,14 @@ Answer:
               Program counter
               Register set
               Stack
+Q8. Does each thread have its own memory? Explain.
+Answer: No.
+  Threads share:
+    Code segment
+    Data segment
+    Heap
+  Each thread has its own:
+    Stack
+    Registers_triangle
+    Program counter
+  Sharing memory makes communication fast but requires synchronization.
