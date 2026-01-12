@@ -79,3 +79,21 @@ Answer: No.
     Registers_triangle
     Program counter
   Sharing memory makes communication fast but requires synchronization.
+Q9. What system-level changes are required to support threads?
+Answer:
+To support threads, the OS must provide:
+  Thread scheduling
+  Thread synchronization mechanisms
+  Thread creation and termination
+  Modified PCB structure
+  These changes increase OS complexity.
+Q10. Why are threads considered lightweight?
+Answer:
+       Threads are lightweight because:
+       They share memory and resources
+       Creation and switching is faster than processes
+       Less overhead
+Q11. Can threads exist without processes?
+Answer:
+      No.
+      A thread must belong to a process.
