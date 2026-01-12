@@ -40,3 +40,13 @@ Answer:
     Typing text while spell checker runs
   
   📌 This improves user experience and performance.
+
+Q5. Why are threads especially useful on multicore systems?
+Answer:
+         On multicore systems:
+             Each core can run a separate thread
+             Threads execute in parallel
+          This leads to:
+             Faster execution
+            Better CPU utilization
+            True parallelism (not just time-sharing)
