@@ -8,3 +8,25 @@ processes according to a unique process identifie (or pid), which is typically
 an integer number. The pid provides a unique value for each process in the
 system, and it can be used as an index to access various attributes of a process
 within the kernel
+
+3.3.2.1 Android Process Hierarchy
+Because of resource constraints such as limited memory, mobile operating
+systems may have to terminate existing processes to reclaim limited system
+resources. Rather than terminating an arbitrary process, Android has identified
+an importance hierarchy of processes, and when the system must terminate
+a process to make resources available for a new, or more important, process,
+it terminates processes in order of increasing importance. From most to least
+important, the hierarchy of process classifications is as follows:
+• Foreground process—The current process visible on the screen, representing the application the user is currently interacting with
+• Visible process—A process that is not directly visible on the foreground
+but that is performing an activity that the foreground process is referring
+to (that is, a process performing an activity whose status is displayed on
+the foreground process)
+
+• Service process—A process that is similar to a background process but
+is performing an activity that is apparent to the user (such as streaming
+music)
+• Background process—A process that may be performing an activity but
+is not apparent to the user.
+• Empty process—A process that holds no active components associated
+with any application
